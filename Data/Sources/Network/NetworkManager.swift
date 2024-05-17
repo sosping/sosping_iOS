@@ -10,7 +10,7 @@ import Domain
 import Shared
 
 final class NetworkManager {
-    private var accessToken: String? = "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVFVUT1IiXSwiYXVkIjoiMSIsImlhdCI6MTcxNTk2OTMyNSwiZXhwIjoxNzE1OTc2NTI1fQ.L7bg0UwZXNqL_l8lty2jssR0DtIzSyppbf9J9b-8Y8HF4HbKSuAFq-deokss9wV6Y0stGkVoErYtmgRtCZFRyw"
+    private var accessToken: String? = "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVFVUT1IiXSwiYXVkIjoiMSIsImlhdCI6MTcxNTk3NjU2MSwiZXhwIjoxNzE1OTgzNzYxfQ.0QGENqcBX677cVGiVoBtYGRzcoBTELtoktnsKuYkbkSMwHWV7fUwWoBDIJkBPC5pcBicMfTT-XqqCQeV2ihOZQ"
     private var refreshToken = UserDefaults.standard.string(forKey: "refresh_token")
     
     public static var shared: NetworkManager = .init()
@@ -145,6 +145,8 @@ final class NetworkManager {
             return
         }
         request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
+        
+        debugPrint("\(#function): request = \(request)")
         
         do {
             let data: T = try await responseHanding(request: request)

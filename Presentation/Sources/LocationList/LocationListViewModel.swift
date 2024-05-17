@@ -9,7 +9,7 @@ import SwiftUI
 import Domain
 
 public protocol LocationListViewModelDelegate {
-    func locationCellButtonTapped(name: String)
+    func locationCellButtonTapped(beachLocation: BeachLocation)
 }
 
 @Observable
@@ -36,8 +36,8 @@ public class LocationListViewModel: NSObject {
         }
     }
     
-    func locationCellButtonTapped(name: String) {
-        self.delegate?.locationCellButtonTapped(name: name)
+    func locationCellButtonTapped(beachLocation: BeachLocation) {
+        self.delegate?.locationCellButtonTapped(beachLocation: beachLocation)
     }
     
     func fetchBeachLocations() async {

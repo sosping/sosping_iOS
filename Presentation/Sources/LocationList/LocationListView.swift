@@ -32,7 +32,7 @@ public struct LocationListView: View {
                 list
                     .padding(.leading, 24)
                     .padding(.top, 44)
-                    .transition(.move(edge: .bottom).combined(with: .blurReplace))
+                    .transition(.move(edge: .bottom).combined(with: .blurReplace).combined(with: .opacity))
             }
         }
         .navigationTitle("")
@@ -60,7 +60,7 @@ public struct LocationListView: View {
     @ViewBuilder
     public func locationCellButton(location: BeachLocation) -> some View {
         Button {
-            
+            viewModel.locationCellButtonTapped(beachLocation: location)
         } label: {
             VStack(alignment: .leading, spacing: 4) {
                 Spacer()

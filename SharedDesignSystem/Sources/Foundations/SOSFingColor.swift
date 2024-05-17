@@ -12,6 +12,7 @@ public enum SOSFingColor: String {
     case sosfingRed = "sosfing.red"
     case sosfingGray1 = "sosfing.gray1"
     case sosfingGray2 = "sosfing.gray2"
+    case sosfingGray3 = "sosfing.gray3"
     case sosfingText = "sosfing.text"
     
     public var color: Color {

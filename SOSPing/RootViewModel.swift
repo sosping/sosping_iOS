@@ -13,6 +13,8 @@ import Domain
 @Observable
 final class RootViewModel {
     var path: [Navigation] = []
+    var showTutorModal = false
+    var lesson: Lesson?
     
     var homeViewModelInjection: HomeViewModel {
         let beachRepository = BeachRepository()
@@ -30,8 +32,38 @@ final class RootViewModel {
         let loginRepository = LoginRepository()
         let beachLocationUseCase = BeachLocationUseCase(repository: beachLocationRepository)
         let loginUseCase = LoginUseCase(repository: loginRepository)
-        let viewModel = LocationListViewModel(location: name, beachLocationUseCase: beachLocationUseCase, loginUseCase: loginUseCase)
+        let viewModel = LocationListViewModel(
+            location: name,
+            beachLocationUseCase: beachLocationUseCase,
+            loginUseCase: loginUseCase)
         viewModel.delegate = self
+        
+        return viewModel
+    }
+    
+    func lessonReservationViewModelInjection(beachLocation: BeachLocation) -> LessonReservationViewModel {
+        let lessonRepository = LessonRepository()
+        let loginRepository = LoginRepository()
+        let lessonUseCase = LessonUseCase(repository: lessonRepository)
+        let loginUseCase = LoginUseCase(repository: loginRepository)
+        let viewModel = LessonReservationViewModel(
+            beachLocation: beachLocation,
+            lessonUseCase: lessonUseCase,
+            loginUseCase: loginUseCase)
+        viewModel.delegate = self
+        
+        return viewModel
+    }
+    
+    func tutorViewModelInjection(lesson: Lesson) -> TutorViewModel {
+        let tutorRepository = TutorRepository()
+        let loginRepository = LoginRepository()
+        let tutorUseCase = TutorUseCase(repository: tutorRepository)
+        let loginUseCase = LoginUseCase(repository: loginRepository)
+        let viewModel = TutorViewModel(
+            lesson: lesson,
+            tutorUseCase: tutorUseCase,
+            loginUseCase: loginUseCase)
         
         return viewModel
     }
@@ -48,13 +80,24 @@ extension RootViewModel: HomeViewModelDelegate {
     }
     
     func searchButtonTapped(searchText: String) {
-        
     }
 }
 
 extension RootViewModel: LocationListViewModelDelegate {
-    func locationCellButtonTapped(name: String) {
+    func locationCellButtonTapped(beachLocation: Domain.BeachLocation) {
+        let viewModel = self.lessonReservationViewModelInjection(beachLocation: beachLocation)
+        self.path.append(.lessonReservation(viewModel))
+    }
+}
+
+extension RootViewModel: LessonReservationViewModelDelegate {
+    func weatherDetailButtonTapped() {
         
+    }
+    
+    func tutorCellButtonTapped(lesson: Lesson) {
+        self.lesson = lesson
+        self.showTutorModal = true
     }
 }
 
@@ -62,5 +105,6 @@ extension RootViewModel {
     enum Navigation: Hashable {
         case home(HomeViewModel)
         case locationList(LocationListViewModel)
+        case lessonReservation(LessonReservationViewModel)
     }
 }

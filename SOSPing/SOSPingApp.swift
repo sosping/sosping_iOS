@@ -6,9 +6,14 @@
 //
 
 import SwiftUI
+import SharedDesignSystem
 
 @main
 struct SOSPingApp: App {
+    init() {
+        Font.registerFont()
+    }
+    
     var body: some Scene {
         WindowGroup {
             RootView()

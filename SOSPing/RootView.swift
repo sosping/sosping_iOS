@@ -23,6 +23,18 @@ struct RootView: View {
                         HomeView(viewModel: viewModel)
                     case .locationList(let viewModel):
                         LocationListView(viewModel: viewModel)
+                    case .lessonReservation(let viewModel):
+                        LessonReservationView(viewModel: viewModel)
+                    }
+                }
+                .sheet(isPresented: $viewModel.showTutorModal) {
+                    if let lesson = viewModel.lesson {
+                        TutorView(viewModel: viewModel.tutorViewModelInjection(lesson: lesson))
+                            .presentationDetents([.fraction(0.65)])
+                            .presentationDragIndicator(.hidden)
+                            .presentationCornerRadius(20)
+                            .presentationBackground(.clear)
+                            .presentationBackgroundInteraction(.enabled(upThrough: .fraction(0.65)))
                     }
                 }
         }

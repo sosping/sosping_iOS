@@ -174,7 +174,7 @@ public struct HomeView: View {
                         }
                     }
                 }
-                .transition(.move(edge: .trailing).combined(with: .blurReplace))
+                .transition(.move(edge: .trailing).combined(with: .blurReplace).combined(with: .opacity))
             }
         }
     }
