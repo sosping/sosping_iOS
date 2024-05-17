@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9357A472BF7B750002F2FAC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C9357A462BF7B750002F2FAC /* FirebaseAnalytics */; };
+		C9357A492BF7B750002F2FAC /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = C9357A482BF7B750002F2FAC /* FirebaseMessaging */; };
+		C9357A4A2BF7BAE2002F2FAC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7C18F2BF74E7C00F8085F /* RootView.swift */; };
+		C9357A4B2BF7BAE2002F2FAC /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9357A432BF7B494002F2FAC /* RootViewModel.swift */; };
+		C9357A4D2BF7BB3C002F2FAC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9357A4C2BF7BB3C002F2FAC /* RootView.swift */; };
+		C9C0F5F52BF75F71004F24AE /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = C9C0F5F42BF75F71004F24AE /* Presentation */; };
+		C9C0F5F72BF75F77004F24AE /* Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = C9C0F5F62BF75F77004F24AE /* Presentation */; };
+		C9C0F5FA2BF7761D004F24AE /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = C9C0F5F92BF7761D004F24AE /* Preview Content */; };
+		C9C0F5FC2BF77628004F24AE /* Preview Content in Resources */ = {isa = PBXBuildFile; fileRef = C9C0F5FB2BF77628004F24AE /* Preview Content */; };
+		C9C984032BF77CF600F3B7AB /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = C9C984022BF77CF600F3B7AB /* Data */; };
+		C9C984052BF77CFA00F3B7AB /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = C9C984042BF77CFA00F3B7AB /* Data */; };
 		C9E7C17C2BF74E7B00F8085F /* SOSPingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7C17B2BF74E7B00F8085F /* SOSPingApp.swift */; };
-		C9E7C17E2BF74E7B00F8085F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7C17D2BF74E7B00F8085F /* ContentView.swift */; };
-		C9E7C1802BF74E7C00F8085F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E7C17F2BF74E7C00F8085F /* Assets.xcassets */; };
-		C9E7C1832BF74E7C00F8085F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E7C1822BF74E7C00F8085F /* Preview Assets.xcassets */; };
 		C9E7C1892BF74E7C00F8085F /* SOSPing Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C9E7C1882BF74E7C00F8085F /* SOSPing Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C9E7C18E2BF74E7C00F8085F /* SOSPingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7C18D2BF74E7C00F8085F /* SOSPingApp.swift */; };
-		C9E7C1902BF74E7C00F8085F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7C18F2BF74E7C00F8085F /* ContentView.swift */; };
-		C9E7C1922BF74E7D00F8085F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E7C1912BF74E7D00F8085F /* Assets.xcassets */; };
-		C9E7C1952BF74E7D00F8085F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E7C1942BF74E7D00F8085F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,16 +48,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C9357A432BF7B494002F2FAC /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		C9357A4C2BF7BB3C002F2FAC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C9357A4E2BF7BFC1002F2FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C9C0F5EF2BF75C51004F24AE /* SharedDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedDesignSystem; sourceTree = "<group>"; };
+		C9C0F5F02BF75CE9004F24AE /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
+		C9C0F5F12BF75D79004F24AE /* Data */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Data; sourceTree = "<group>"; };
+		C9C0F5F22BF75DC1004F24AE /* Presentation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Presentation; sourceTree = "<group>"; };
+		C9C0F5F82BF7605E004F24AE /* Shared */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Shared; sourceTree = "<group>"; };
+		C9C0F5F92BF7761D004F24AE /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
+		C9C0F5FB2BF77628004F24AE /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		C9E7C1782BF74E7B00F8085F /* SOSPing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSPing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E7C17B2BF74E7B00F8085F /* SOSPingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPingApp.swift; sourceTree = "<group>"; };
-		C9E7C17D2BF74E7B00F8085F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C9E7C17F2BF74E7C00F8085F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9E7C1822BF74E7C00F8085F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C9E7C1882BF74E7C00F8085F /* SOSPing Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOSPing Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E7C18D2BF74E7C00F8085F /* SOSPingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPingApp.swift; sourceTree = "<group>"; };
-		C9E7C18F2BF74E7C00F8085F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C9E7C1912BF74E7D00F8085F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9E7C1942BF74E7D00F8085F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9E7C18F2BF74E7C00F8085F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9357A492BF7B750002F2FAC /* FirebaseMessaging in Frameworks */,
+				C9C984032BF77CF600F3B7AB /* Data in Frameworks */,
+				C9C0F5F52BF75F71004F24AE /* Presentation in Frameworks */,
+				C9357A472BF7B750002F2FAC /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,18 +81,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C984052BF77CFA00F3B7AB /* Data in Frameworks */,
+				C9C0F5F72BF75F77004F24AE /* Presentation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9C0F5F32BF75F71004F24AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C9E7C16F2BF74E7B00F8085F = {
 			isa = PBXGroup;
 			children = (
+				C9C0F5F82BF7605E004F24AE /* Shared */,
+				C9C0F5F22BF75DC1004F24AE /* Presentation */,
+				C9C0F5F12BF75D79004F24AE /* Data */,
+				C9C0F5F02BF75CE9004F24AE /* Domain */,
+				C9C0F5EF2BF75C51004F24AE /* SharedDesignSystem */,
 				C9E7C17A2BF74E7B00F8085F /* SOSPing */,
 				C9E7C18C2BF74E7C00F8085F /* SOSPing Watch App */,
 				C9E7C1792BF74E7B00F8085F /* Products */,
+				C9C0F5F32BF75F71004F24AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,39 +123,23 @@
 		C9E7C17A2BF74E7B00F8085F /* SOSPing */ = {
 			isa = PBXGroup;
 			children = (
+				C9357A4E2BF7BFC1002F2FAC /* Info.plist */,
+				C9C0F5F92BF7761D004F24AE /* Preview Content */,
 				C9E7C17B2BF74E7B00F8085F /* SOSPingApp.swift */,
-				C9E7C17D2BF74E7B00F8085F /* ContentView.swift */,
-				C9E7C17F2BF74E7C00F8085F /* Assets.xcassets */,
-				C9E7C1812BF74E7C00F8085F /* Preview Content */,
+				C9E7C18F2BF74E7C00F8085F /* RootView.swift */,
+				C9357A432BF7B494002F2FAC /* RootViewModel.swift */,
 			);
 			path = SOSPing;
-			sourceTree = "<group>";
-		};
-		C9E7C1812BF74E7C00F8085F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C9E7C1822BF74E7C00F8085F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C9E7C18C2BF74E7C00F8085F /* SOSPing Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				C9C0F5FB2BF77628004F24AE /* Preview Content */,
 				C9E7C18D2BF74E7C00F8085F /* SOSPingApp.swift */,
-				C9E7C18F2BF74E7C00F8085F /* ContentView.swift */,
-				C9E7C1912BF74E7D00F8085F /* Assets.xcassets */,
-				C9E7C1932BF74E7D00F8085F /* Preview Content */,
+				C9357A4C2BF7BB3C002F2FAC /* RootView.swift */,
 			);
 			path = "SOSPing Watch App";
-			sourceTree = "<group>";
-		};
-		C9E7C1932BF74E7D00F8085F /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C9E7C1942BF74E7D00F8085F /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +160,12 @@
 				C9E7C18B2BF74E7C00F8085F /* PBXTargetDependency */,
 			);
 			name = SOSPing;
+			packageProductDependencies = (
+				C9C0F5F42BF75F71004F24AE /* Presentation */,
+				C9C984022BF77CF600F3B7AB /* Data */,
+				C9357A462BF7B750002F2FAC /* FirebaseAnalytics */,
+				C9357A482BF7B750002F2FAC /* FirebaseMessaging */,
+			);
 			productName = SOSPing;
 			productReference = C9E7C1782BF74E7B00F8085F /* SOSPing.app */;
 			productType = "com.apple.product-type.application";
@@ -164,6 +183,10 @@
 			dependencies = (
 			);
 			name = "SOSPing Watch App";
+			packageProductDependencies = (
+				C9C0F5F62BF75F77004F24AE /* Presentation */,
+				C9C984042BF77CFA00F3B7AB /* Data */,
+			);
 			productName = "SOSPing Watch App";
 			productReference = C9E7C1882BF74E7C00F8085F /* SOSPing Watch App.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +218,9 @@
 				Base,
 			);
 			mainGroup = C9E7C16F2BF74E7B00F8085F;
+			packageReferences = (
+				C9357A452BF7B750002F2FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = C9E7C1792BF74E7B00F8085F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,8 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E7C1832BF74E7C00F8085F /* Preview Assets.xcassets in Resources */,
-				C9E7C1802BF74E7C00F8085F /* Assets.xcassets in Resources */,
+				C9C0F5FA2BF7761D004F24AE /* Preview Content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E7C1952BF74E7D00F8085F /* Preview Assets.xcassets in Resources */,
-				C9E7C1922BF74E7D00F8085F /* Assets.xcassets in Resources */,
+				C9C0F5FC2BF77628004F24AE /* Preview Content in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,8 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E7C17E2BF74E7B00F8085F /* ContentView.swift in Sources */,
 				C9E7C17C2BF74E7B00F8085F /* SOSPingApp.swift in Sources */,
+				C9357A4B2BF7BAE2002F2FAC /* RootViewModel.swift in Sources */,
+				C9357A4A2BF7BAE2002F2FAC /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9E7C1902BF74E7C00F8085F /* ContentView.swift in Sources */,
+				C9357A4D2BF7BB3C002F2FAC /* RootView.swift in Sources */,
 				C9E7C18E2BF74E7C00F8085F /* SOSPingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +337,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -366,6 +393,8 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
@@ -443,6 +472,7 @@
 				DEVELOPMENT_TEAM = FNC65X95VM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SOSPing/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SOSPing;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,6 +506,7 @@
 				DEVELOPMENT_TEAM = FNC65X95VM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SOSPing/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SOSPing;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -529,6 +560,46 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9357A452BF7B750002F2FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9357A462BF7B750002F2FAC /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9357A452BF7B750002F2FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C9357A482BF7B750002F2FAC /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9357A452BF7B750002F2FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		C9C0F5F42BF75F71004F24AE /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
+		C9C0F5F62BF75F77004F24AE /* Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Presentation;
+		};
+		C9C984022BF77CF600F3B7AB /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+		C9C984042BF77CFA00F3B7AB /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9E7C1702BF74E7B00F8085F /* Project object */;
 }
