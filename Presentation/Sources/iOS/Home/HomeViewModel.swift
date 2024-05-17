@@ -24,11 +24,12 @@ public class HomeViewModel: NSObject {
     @ObservationIgnored private let beachUseCase: BeachUseCaseInterface?
     @ObservationIgnored private let loginUseCase: LoginUseCaseInterface?
     
-    public init(beachUseCase: BeachUseCaseInterface? = nil,
-                loginUseCase: LoginUseCaseInterface? = nil) {
-        self.beachUseCase = beachUseCase
-        self.loginUseCase = loginUseCase
-    }
+    public init(
+        beachUseCase: BeachUseCaseInterface? = nil,
+        loginUseCase: LoginUseCaseInterface? = nil) {
+            self.beachUseCase = beachUseCase
+            self.loginUseCase = loginUseCase
+        }
     
     func onAppeared() {
         Task {

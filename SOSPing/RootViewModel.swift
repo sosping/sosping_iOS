@@ -21,7 +21,9 @@ final class RootViewModel {
         let loginRepository = LoginRepository()
         let beachUseCase = BeachUseCase(repository: beachRepository)
         let loginUseCase = LoginUseCase(repository: loginRepository)
-        let viewModel = HomeViewModel(beachUseCase: beachUseCase, loginUseCase: loginUseCase)
+        let viewModel = HomeViewModel(
+            beachUseCase: beachUseCase,
+            loginUseCase: loginUseCase)
         viewModel.delegate = self
         
         return viewModel

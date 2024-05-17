@@ -14,4 +14,6 @@ public extension Color {
     static let sosfingGray2 = SOSFingColor.sosfingGray2.color
     static let sosfingGray3 = SOSFingColor.sosfingGray3.color
     static let sosfingText = SOSFingColor.sosfingText.color
+    static let sosfingYellow = SOSFingColor.sosfingYellow.color
+    static let sosfingRed2 = SOSFingColor.sosfingRed2.color
 }

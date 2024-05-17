@@ -10,7 +10,7 @@ import Domain
 import Shared
 
 final class NetworkManager {
-    private var accessToken: String? = "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVFVUT1IiXSwiYXVkIjoiMSIsImlhdCI6MTcxNTk3NjU2MSwiZXhwIjoxNzE1OTgzNzYxfQ.0QGENqcBX677cVGiVoBtYGRzcoBTELtoktnsKuYkbkSMwHWV7fUwWoBDIJkBPC5pcBicMfTT-XqqCQeV2ihOZQ"
+    private var accessToken: String? = "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjpbIlJPTEVfVFVUT1IiXSwiYXVkIjoiMSIsImlhdCI6MTcxNTk4Mzc4MywiZXhwIjoxNzE1OTkwOTgzfQ.s6Pkr12ia__9RnlEIfIrsnx0v2J93TBW0O-Tdtka0i0dc2sMbhoCLi5xG0pQOquOp8r06iubiDbtvcBO4yWxlQ"
     private var refreshToken = UserDefaults.standard.string(forKey: "refresh_token")
     
     public static var shared: NetworkManager = .init()
@@ -157,7 +157,7 @@ final class NetworkManager {
         }
     }
     
-    public func post<T: Codable, S: Codable>(path: String, body: T, completion: @escaping (Result<S, APIError>) -> Void) async {
+    public func post<T: Codable, S: Codable>(path: String, body: T?, completion: @escaping (Result<S, APIError>) -> Void) async {
         guard let url = URL(string: "\(self.serverURL)\(path)") else {
             completion(.failure(APIError.unknown))
             return
@@ -169,14 +169,17 @@ final class NetworkManager {
             completion(.failure(APIError.token))
             return
         }
-        request.addValue(accessToken, forHTTPHeaderField: "AccessToken")
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         
-        guard let bodyData = try? JSONEncoder().encode(body) else {
-            completion(.failure(APIError.json))
-            return
+        if let body {
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            guard let bodyData = try? JSONEncoder().encode(body) else {
+                completion(.failure(APIError.json))
+                return
+            }
+            request.httpBody = bodyData
         }
-        request.httpBody = bodyData
         
         do {
             let data: S = try await responseHanding(request: request)

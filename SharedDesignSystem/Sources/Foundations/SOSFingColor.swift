@@ -14,6 +14,8 @@ public enum SOSFingColor: String {
     case sosfingGray2 = "sosfing.gray2"
     case sosfingGray3 = "sosfing.gray3"
     case sosfingText = "sosfing.text"
+    case sosfingYellow = "sosfing.yellow"
+    case sosfingRed2 = "sosfing.red2"
     
     public var color: Color {
         return .init(self.rawValue, bundle: .module)

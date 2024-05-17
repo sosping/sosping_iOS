@@ -6,10 +6,30 @@
 //
 
 import SwiftUI
+import Data
+import Presentation
+import Domain
+import SharedDesignSystem
 
 struct RootView: View {
+    @State private var viewModel = RootViewModel()
+    
+    init() {
+        Font.registerFont()
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack(path: $viewModel.path) { 
+            SOSView(viewModel: viewModel.sosViewModelInjection)
+                .navigationDestination(for: RootViewModel.Navigation.self) { path in
+                    switch path {
+                    case .sos(let viewModel):
+                        SOSView(viewModel: viewModel)
+                    case .confirm:
+                        ConfirmView() 
+                    }
+                }
+        }
     }
 }
 

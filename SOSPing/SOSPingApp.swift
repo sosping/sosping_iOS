@@ -10,6 +10,8 @@ import SharedDesignSystem
 
 @main
 struct SOSPingApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     init() {
         Font.registerFont()
     }

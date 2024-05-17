@@ -93,7 +93,9 @@ public struct LessonReservationView: View {
     
     private var calendar: some View {
         DatePicker("날짜", selection: $viewModel.selectedDate, in: Date()..., displayedComponents: .date)
+        #if os(iOS)
             .datePickerStyle(.graphical)
+        #endif
             .tint(.sosfingBlue)
     }
     

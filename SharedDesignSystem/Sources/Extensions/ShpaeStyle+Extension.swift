@@ -26,4 +26,10 @@ public extension ShapeStyle where Self == Color {
     static var sosfingText: Color {
         return .sosfingText
     }
+    static var sosfingYellow: Color {
+        return .sosfingYellow
+    }
+    static var sosfingRed2: Color {
+        return .sosfingRed2
+    }
 }
