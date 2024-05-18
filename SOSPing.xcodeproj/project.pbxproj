@@ -23,7 +23,6 @@
 		C9C984032BF77CF600F3B7AB /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = C9C984022BF77CF600F3B7AB /* Data */; };
 		C9C984052BF77CFA00F3B7AB /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = C9C984042BF77CFA00F3B7AB /* Data */; };
 		C9E7C17C2BF74E7B00F8085F /* SOSPingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7C17B2BF74E7B00F8085F /* SOSPingApp.swift */; };
-		C9E7C1892BF74E7C00F8085F /* SOSPing Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C9E7C1882BF74E7C00F8085F /* SOSPing Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C9E7C18E2BF74E7C00F8085F /* SOSPingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7C18D2BF74E7C00F8085F /* SOSPingApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				C9E7C1892BF74E7C00F8085F /* SOSPing Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,9 +58,6 @@
 		C9357A542BF80AE7002F2FAC /* SOSPing Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SOSPing Watch App.entitlements"; sourceTree = "<group>"; };
 		C9357A552BF80AF0002F2FAC /* SOSPing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SOSPing.entitlements; sourceTree = "<group>"; };
 		C9357A562BF80BF3002F2FAC /* SOSPing-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SOSPing-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
-		C9357A722BF81D2D002F2FAC /* SOSPingExtensionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPingExtensionExtension.swift; sourceTree = "<group>"; };
-		C9357A742BF81D2D002F2FAC /* SOSPingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPingExtension.swift; sourceTree = "<group>"; };
-		C9357A762BF81D2D002F2FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9357A7A2BF81FAE002F2FAC /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		C9C0F5EF2BF75C51004F24AE /* SharedDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = SharedDesignSystem; sourceTree = "<group>"; };
 		C9C0F5F02BF75CE9004F24AE /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
@@ -71,9 +66,9 @@
 		C9C0F5F82BF7605E004F24AE /* Shared */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Shared; sourceTree = "<group>"; };
 		C9C0F5F92BF7761D004F24AE /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
 		C9C0F5FB2BF77628004F24AE /* Preview Content */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Preview Content"; sourceTree = "<group>"; };
-		C9E7C1782BF74E7B00F8085F /* SOSPing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOSPing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E7C1782BF74E7B00F8085F /* SOSPing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SOSPing.app; path = "/Users/gimdohyeong/Documents/Swift/sosping_iOS/build/Debug-iphoneos/SOSPing.app"; sourceTree = "<absolute>"; };
 		C9E7C17B2BF74E7B00F8085F /* SOSPingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPingApp.swift; sourceTree = "<group>"; };
-		C9E7C1882BF74E7C00F8085F /* SOSPing Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOSPing Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9E7C1882BF74E7C00F8085F /* SOSPing Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "SOSPing Watch App.app"; path = "/Users/gimdohyeong/Documents/Swift/sosping_iOS/build/Debug-watchos/SOSPing Watch App.app"; sourceTree = "<absolute>"; };
 		C9E7C18D2BF74E7C00F8085F /* SOSPingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOSPingApp.swift; sourceTree = "<group>"; };
 		C9E7C18F2BF74E7C00F8085F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,23 +97,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C9357A712BF81D2D002F2FAC /* SOSPingExtension */ = {
-			isa = PBXGroup;
-			children = (
-				C9357A722BF81D2D002F2FAC /* SOSPingExtensionExtension.swift */,
-				C9357A742BF81D2D002F2FAC /* SOSPingExtension.swift */,
-				C9357A762BF81D2D002F2FAC /* Info.plist */,
-			);
-			path = SOSPingExtension;
-			sourceTree = "<group>";
-		};
-		C9C0F5F32BF75F71004F24AE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		C9E7C16F2BF74E7B00F8085F = {
 			isa = PBXGroup;
 			children = (
@@ -129,19 +107,7 @@
 				C9C0F5EF2BF75C51004F24AE /* SharedDesignSystem */,
 				C9E7C17A2BF74E7B00F8085F /* SOSPing */,
 				C9E7C18C2BF74E7C00F8085F /* SOSPing Watch App */,
-				C9357A712BF81D2D002F2FAC /* SOSPingExtension */,
-				C9E7C1792BF74E7B00F8085F /* Products */,
-				C9C0F5F32BF75F71004F24AE /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		C9E7C1792BF74E7B00F8085F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C9E7C1782BF74E7B00F8085F /* SOSPing.app */,
-				C9E7C1882BF74E7C00F8085F /* SOSPing Watch App.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C9E7C17A2BF74E7B00F8085F /* SOSPing */ = {
@@ -251,7 +217,7 @@
 			packageReferences = (
 				C9357A452BF7B750002F2FAC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = C9E7C1792BF74E7B00F8085F /* Products */;
+			productRefGroup = C9E7C16F2BF74E7B00F8085F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
