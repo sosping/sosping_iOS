@@ -16,7 +16,7 @@ public protocol LessonReservationViewModelDelegate: AnyObject {
 
 @Observable
 public class LessonReservationViewModel: NSObject {
-    public var delegate: (any LessonReservationViewModelDelegate)?
+    public weak var delegate: (any LessonReservationViewModelDelegate)?
     
     let beachLocation: BeachLocation
     var lessons: [Lesson] = []

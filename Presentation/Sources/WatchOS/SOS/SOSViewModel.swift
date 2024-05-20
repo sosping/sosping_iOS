@@ -9,7 +9,7 @@ import SwiftUI
 import Domain
 import Shared
 
-public protocol SOSViewModelDelegate {
+public protocol SOSViewModelDelegate: AnyObject {
     func sosButtonTapped()
 }
 
@@ -18,7 +18,7 @@ public class SOSViewModel: NSObject {
     var latitude: Double = 0.0
     var longitude: Double = 0.0
     
-    public var delegate: (any SOSViewModelDelegate)?
+    public weak var delegate: (any SOSViewModelDelegate)?
     
     public init(locationUseCase: LocationUseCaseInterface? = nil) {
         super.init()

@@ -8,13 +8,13 @@
 import SwiftUI
 import Domain
 
-public protocol LocationListViewModelDelegate {
+public protocol LocationListViewModelDelegate: AnyObject {
     func locationCellButtonTapped(beachLocation: BeachLocation)
 }
 
 @Observable
 public class LocationListViewModel: NSObject {
-    public var delegate: (any LocationListViewModelDelegate)?
+    public weak var delegate: (any LocationListViewModelDelegate)?
     
     let location: String
     var beachLocations: [BeachLocation] = []

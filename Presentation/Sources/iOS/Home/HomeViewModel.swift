@@ -16,8 +16,7 @@ public protocol HomeViewModelDelegate: AnyObject {
 
 @Observable
 public class HomeViewModel: NSObject {
-    public var delegate: (any HomeViewModelDelegate)?
-    
+    public weak var delegate: (any HomeViewModelDelegate)?
     var searchText: String = ""
     var dailyBeach: [Beach.BeachData] = []
     
